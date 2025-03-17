@@ -13,7 +13,7 @@
     <title>Click & Build</title>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <header>
         <img src="img/hero.avif" alt="Click & Build store" />
         <div class="header-text-box">
@@ -23,7 +23,7 @@
             The result is a seamless blend of beauty and technology, designed to
             enhance your productivity and performance.
           </p>
-          <a class="btn btn--big" href="#" alt="">Build your pc</a>
+          <a class="btn btn--big" href="#">Build your pc</a>
         </div>
       </header>
       <section>
@@ -95,7 +95,7 @@
         </div>
       </section>
       <section class="testimonial-section">
-        <div class="grid-3-cols">
+        <div class="testimonial-layout">
           <div class="testimonial-box">
             <h2>"I will never go back to prebuilt PC's again!"</h2>
             <blockquote class="testimonial-text">
@@ -103,16 +103,61 @@
               unbeatable. The build quality is top-notch, and the attention to
               detail makes all the difference!
             </blockquote>
-            <p class="testimonial-author">— DriftTech</p>
+            <p class="testimonial-author">Evan Mask</p>
+            <p class="testimonial-job">@DriftTech</p>
           </div>
           <img src="img/customer.avif" alt="Customer" />
+        </div>
+        <button
+          class="testimonial-btn btn--left"
+          aria-label="Previous testimonial"
+        >
+          <svg
+            class="testimonial-btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+            ></path>
+          </svg>
+        </button>
+        <button
+          class="testimonial-btn btn--right"
+          aria-label="Next testimonial"
+        >
+          <svg
+            class="testimonial-btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+        </button>
+        <div class="dots">
+          <button class="dot dot--fill" aria-label="Testimonial 1"></button>
+          <button class="dot" aria-label="Testimonial 2"></button>
+          <button class="dot" aria-label="Testimonial 3"></button>
+          <button class="dot" aria-label="Testimonial 4"></button>
         </div>
       </section>
       <section>
         <h2>Our bestselling computers</h2>
         <div class="grid-3-cols">
           <figure class="pc">
-            <img class="img-pc" src="img/pc-1.avif" alt="PC Photon Blade" />
+            <img
+              class="img-pc"
+              src="img/pc-1.avif"
+              alt="Photon Blade Gaming PC"
+            />
             <div class="pc-box">
               <h3>Photon Blade</h3>
               <ul class="pc-details">
@@ -199,7 +244,11 @@
             </div>
           </figure>
           <figure class="pc">
-            <img class="img-pc" src="img/pc-2.avif" alt="PC Void Runner Pro" />
+            <img
+              class="img-pc"
+              src="img/pc-2.avif"
+              alt="Void Runner Pro Gaming PC"
+            />
             <div class="pc-box">
               <h3>Void Runner Pro</h3>
               <ul class="pc-details">
@@ -286,7 +335,11 @@
             </div>
           </figure>
           <figure class="pc">
-            <img class="img-pc" src="img/pc-3.avif" alt="PC Cyber Savage Pro" />
+            <img
+              class="img-pc"
+              src="img/pc-3.avif"
+              alt="Cyber Savage Pro Gaming PC"
+            />
             <div class="pc-box">
               <h3>Cyber Savage Pro</h3>
               <ul class="pc-details">
@@ -375,8 +428,12 @@
         </div>
       </section>
       <footer>
-        Copyright © 2025 by maxhabibulin. Used for learning purpose only.
+        Copyright © 2020 by
+        <a href="https://github.com/maxhabibulin" target="_blank"
+          >maxhabibulin</a
+        >. Used for learning purposes only.
       </footer>
-    </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

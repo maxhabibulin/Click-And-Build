@@ -55,14 +55,14 @@ img {
 }
 
 .btn--big:hover {
-  box-shadow: 0 15px 30px 0 rgba(24, 100, 171, 0.09);
+  box-shadow: 0 16px 24px rgba(24, 100, 171, 0.1);
 }
 
 .btn--big:active {
-  box-shadow: 0 7px 30px 0 rgba(24, 100, 171, 0.09);
+  box-shadow: 0 8px 24px 0 rgba(24, 100, 171, 0.1);
 }
 
-/* HEDER PART */
+/* HEADER */
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -115,10 +115,6 @@ h2 {
   line-height: 1.7;
 }
 
-section {
-  margin-bottom: 96px;
-}
-
 .features-icon {
   fill: #1864ab;
   margin-bottom: 24px;
@@ -129,12 +125,22 @@ section {
   color: #fff;
   background-color: #1864ab;
   padding: 24px;
+  margin-bottom: 128px;
   border-radius: 12px;
+  position: relative;
 }
 
-.testimonial-box {
-  grid-column: 1 / -2;
-  align-self: center;
+.testimonial-section img {
+  width: 200px;
+  transform: scale(1.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-layout {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 12px 60px 12px 10px;
 }
 
 .testimonial-box h2 {
@@ -152,6 +158,63 @@ section {
 
 .testimonial-author {
   color: #d0ebff;
+  margin-bottom: 4px;
+}
+
+.testimonial-job {
+  font-size: 14px;
+  color: #d0ebff;
+}
+
+.testimonial-btn-icon {
+  fill: #1864ab;
+}
+
+.testimonial-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn--left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  cursor: pointer;
+}
+
+.dot {
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #1864ab;
+}
+
+.dot--fill {
+  background-color: #1864ab;
 }
 
 /* SECTION 3 */
@@ -205,9 +268,12 @@ li {
 .details-icon {
   fill: #1864ab;
 }
+
 /* FOOTER */
-footer {
+footer,
+footer a {
   color: #495057;
   font-size: 14px;
+  text-decoration: none;
   margin-bottom: 48px;
 }
