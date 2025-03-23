@@ -17,15 +17,26 @@ GRAY: #343a40
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #1864ab;
+  --gray-color: #343a40;
+  --addition-color-1: #fff;
+  --addition-color-2: #1c7ed6;
+  --addition-color-3: #e7f5ff;
+  --addition-color-4: #d0ebff;
+  --addition-color-5: #495057;
+}
+
 body {
+  display: flex;
+  justify-content: center;
   font-family: "Inter", sans-serif;
-  color: #343a40;
-  border-bottom: 8px solid #1864ab;
+  color: var(--gray-color);
+  border-bottom: 8px solid var(--main-color);
 }
 
 .container {
   width: 960px;
-  margin: 0 auto;
 }
 
 header,
@@ -40,8 +51,8 @@ img {
 
 .btn:link,
 .btn:visited {
-  color: #fff;
-  background-color: #1864ab;
+  color: var(--addition-color-1);
+  background-color: var(--main-color);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -51,19 +62,19 @@ img {
 
 .btn:hover,
 .btn:active {
-  background-color: #1c7ed6;
+  background-color: var(--addition-color-2);
 }
 
 .btn--big:hover {
-  box-shadow: 0 16px 24px rgba(24, 100, 171, 0.1);
+  box-shadow: 0 14px 24px rgba(24, 100, 171, 0.1);
 }
 
 .btn--big:active {
-  box-shadow: 0 8px 24px 0 rgba(24, 100, 171, 0.1);
+  box-shadow: 0 7px 24px 0 rgba(24, 100, 171, 0.1);
 }
 
 /* HEADER */
-header {
+.header-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
@@ -116,14 +127,14 @@ h2 {
 }
 
 .features-icon {
-  fill: #1864ab;
+  fill: var(--main-color);
   margin-bottom: 24px;
 }
 
 /* SECTION 2 */
 .testimonial-section {
-  color: #fff;
-  background-color: #1864ab;
+  color: var(--addition-color-1);
+  background-color: var(--main-color);
   padding: 24px;
   margin-bottom: 128px;
   border-radius: 12px;
@@ -149,7 +160,7 @@ h2 {
 }
 
 .testimonial-text {
-  color: #e7f5ff;
+  color: var(--addition-color-3);
   font-size: 18px;
   font-style: italic;
   line-height: 1.7;
@@ -157,17 +168,17 @@ h2 {
 }
 
 .testimonial-author {
-  color: #d0ebff;
+  color: var(--addition-color-4);
   margin-bottom: 4px;
 }
 
 .testimonial-job {
   font-size: 14px;
-  color: #d0ebff;
+  color: var(--addition-color-4);
 }
 
 .testimonial-btn-icon {
-  fill: #1864ab;
+  fill: var(--main-color);
 }
 
 .testimonial-btn {
@@ -206,15 +217,15 @@ h2 {
 }
 
 .dot {
-  background-color: #fff;
+  background-color: var(--addition-color-1);
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #1864ab;
+  border: 2px solid var(--main-color);
 }
 
 .dot--fill {
-  background-color: #1864ab;
+  background-color: var(--main-color);
 }
 
 /* SECTION 3 */
@@ -266,13 +277,13 @@ li {
 }
 
 .details-icon {
-  fill: #1864ab;
+  fill: var(--main-color);
 }
 
 /* FOOTER */
 footer,
 footer a {
-  color: #495057;
+  color: var(--addition-color-5);
   font-size: 14px;
   text-decoration: none;
   margin-bottom: 48px;
