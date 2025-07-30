@@ -103,19 +103,28 @@
       <section class="container testimonial-section">
         <div class="testimonial-layout">
           <div class="testimonial-box">
-            <h2>"I will never go back to prebuilt PC's again!"</h2>
-            <blockquote class="testimonial-text">
+            <h2 id="testimonial-heading">
+              "I will never go back to prebuilt PC's again!"
+            </h2>
+            <blockquote class="testimonial-text" id="testimonial-text-quote">
               Every component is carefully selected, and the performance is
               unbeatable. The build quality is top-notch, and the attention to
               detail makes all the difference!
             </blockquote>
-            <p class="testimonial-author">Evan Mask</p>
-            <p class="testimonial-job">@DriftTech</p>
+            <p class="testimonial-author" id="testimonial-author-name">
+              Evan Mask
+            </p>
+            <p class="testimonial-job" id="testimonial-job-tag">@DriftTech</p>
           </div>
-          <img src="img/customer.avif" alt="Customer" />
+          <img
+            id="testimonial-image"
+            src="img/customer-1.avif"
+            alt="Customer"
+          />
         </div>
         <button
           class="testimonial-btn btn--left"
+          id="move-testimonial-backward"
           aria-label="Previous testimonial"
         >
           <svg
@@ -133,6 +142,7 @@
         </button>
         <button
           class="testimonial-btn btn--right"
+          id="move-testimonial-forward"
           aria-label="Next testimonial"
         >
           <svg
