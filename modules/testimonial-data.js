@@ -8,7 +8,7 @@ const TESTIMONIALS = [
               detail makes all the difference!`,
     name: "Evan Mask",
     tag: "@DriftTech",
-    image: "./img/customer-1.avif",
+    image: "img/customer-1.avif",
   },
   {
     heading: `"Custom builds changed how I game forever!"`,
@@ -17,7 +17,7 @@ const TESTIMONIALS = [
           is a flawless experience — smooth, fast, and reliable!`,
     name: "Kris Jackson",
     tag: "@KrisJackson",
-    image: "./img/customer-2.avif",
+    image: "img/customer-2.avif",
   },
   {
     heading: `"The best PC I've ever owned — hands down!"`,
@@ -26,7 +26,7 @@ const TESTIMONIALS = [
          knowing each part was chosen just for me.`,
     name: "Jordan Wang",
     tag: "@Asmonplay",
-    image: "./img/customer-3.avif",
+    image: "img/customer-3.avif",
   },
   {
     heading: `"From order to gameplay — flawless experience!"`,
@@ -35,7 +35,7 @@ const TESTIMONIALS = [
          is sleek, quiet, and powerful.`,
     name: "Riley Jonson",
     tag: "@RileyJ47",
-    image: "./img/customer-4.avif",
+    image: "img/customer-4.avif",
   },
 ];
 
