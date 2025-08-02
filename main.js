@@ -18,9 +18,8 @@ const testimonialElements = {
     return document.querySelector(`#dot-${counter + 1}`);
   },
 };
-
 const showCurrentYear = document.querySelector("#show-current-year");
-showCurrentYear.textContent = currentYear.getCurrentYear();
+const dots = document.querySelectorAll(".dot");
 
 let previousCounter = 0;
 
@@ -41,6 +40,8 @@ const render = () => {
   previousCounter = testimonial.counter;
 };
 
+showCurrentYear.textContent = currentYear.getCurrentYear();
+
 function goForward() {
   testimonial.moveForward();
   render();
@@ -57,4 +58,11 @@ testimonialElements.btnBackward.addEventListener("click", goBackward);
 document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") goForward();
   if (event.key === "ArrowLeft") goBackward();
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    testimonial.counter = index;
+    render();
+  });
 });
