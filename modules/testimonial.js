@@ -25,7 +25,7 @@ class Testimonial {
 
   moveForward() {
     if (this.#counter > 2) {
-      this.counter = -1;
+      this.#counter = -1;
     }
     this.#counter++;
   }
