@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # 🖥️ Click & Build (Demo)
 
 This is an **educational HTML, CSS, and JavaScript project** created to practice frontend design, object-oriented programming (OOP), and DOM manipulation.
