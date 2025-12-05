@@ -82,8 +82,9 @@ php -S localhost:8000         # PHP
 - Implement **interactive UI components**
 - Master **CSS layout techniques** (Grid & Flexbox)
 - Apply **accessibility best practices**
-- ~~Create **responsive web designs**~~ _Planned for future Vue.js migration_
 - Use **ES6+ features** (Classes, Modules, Arrow functions)
+- _Future: Implement responsive design_
+- _Future: Migrate to Vite build system_
 
 ---
 
